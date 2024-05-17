@@ -1,0 +1,18 @@
+#include<stdio.h>
+int decimal_to_binary_recursive(int n) {
+if(n==0) 
+   return 0;
+else { 
+    decimal_to_binary_recursive(n/2); 
+    printf("%d",n%2);
+     return 0; 
+}
+}
+
+int main() 
+{ int n; 
+ printf("Enter a number\n"); 
+ scanf("%d",&n);
+    decimal_to_binary_recursive(n);
+    return 0; 
+} 
